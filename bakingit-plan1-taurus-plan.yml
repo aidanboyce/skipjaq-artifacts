@@ -1,0 +1,605 @@
+---
+modules:
+  local:
+    sequential: true
+  jmeter:
+    gui: false
+
+execution:
+- concurrency: 500
+  hold-for: 3600s
+  iterations: 10
+  ramp-up: 10s
+  scenario: source-activity-scenario
+
+scenarios:
+  source-activity-scenario:
+    requests:
+    - url: bakingit.com/?package_id=244626&action=none
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/a-complete-guide-to-delivering-cakes-safely
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/free-cake-on-board-printable-delivery-signs?relatedposts_hit=1&relatedposts_origin=436&relatedposts_position=0
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/ftasks.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/design-a-cake.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/cake-calculators-available-on-tablet-devices
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/index2.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/index1.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/frecipes.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/forders.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/top-12-time-management-tips-for-cake-decorators?relatedposts_hit=1&relatedposts_origin=525&relatedposts_position=2
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/top-reasons-to-turn-down-a-cake-order
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/a-complete-guide-to-delivering-cakes-safely?relatedposts_hit=1&relatedposts_origin=74&relatedposts_position=0
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stack-a-multi-tiered-cake-in-7-easy-steps
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/category/recipes
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/category/free-printables
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/you-know-you-are-a-cake-decorator-when-2
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/author/bakingit
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stop-cupcake-cases-peeling-away/
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/category/cake-calculators
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/baking-tips
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cakestacker
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/category/cake-decorating
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-decorating
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/fkitchen.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/a-complete-guide-to-delivering-cakes-safely?inf_contact_key=31aafbef3fd4bb23c15d67df2c755757cee6fa3e26af6322a8dae4d71fe41209
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/free-cake-on-board-printable-delivery-signs?relatedposts_hit=1&relatedposts_origin=436&relatedposts_position=1
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/a-complete-guide-to-delivering-cakes-safely?relatedposts_hit=1&relatedposts_origin=509&relatedposts_position=2
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/stack-a-cake
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/stacking
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/dowels
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/top-12-time-management-tips-for-cake-decorators
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/you-know-you-are-a-cake-decorator-when
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/you-know-you-are-a-cake-decorator-when?relatedposts_hit=1&relatedposts_origin=594&relatedposts_position=0
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/wp-content/uploads/2015/08/Dowels-with-labels.png
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/wp-content/uploads/2015/10/Cake-On-Board-Car-Sign.pdf
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/free-cake-on-board-printable-delivery-signs?relatedposts_hit=1&relatedposts_origin=436&relatedposts_position=1&relatedposts_hit=1&relatedposts_origin=436&relatedposts_position=1
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/how-to-prepare-and-conduct-cake-consultation
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/fexpenses.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/category/baking
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/fcakes.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/how-to-prepare-and-conduct-cake-consultation?relatedposts_hit=1&relatedposts_origin=554&relatedposts_position=0
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/about-us
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/free-cake-on-board-printable-delivery-signs
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/category/cake-delivery
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/category/baking-it-news
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/pina-colada-cupcakes
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-business-software
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-business-apps
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/index.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/CTSTerms.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/category/cake-business
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/baking-it-our-story-so-far-in-numbers
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/how-to-protect-your-cake-business-with-comprehensive-terms?relatedposts_hit=1&relatedposts_origin=436&relatedposts_position=0
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/how-to-protect-your-cake-business-with-comprehensive-terms
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cupcakes
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/wp-content/uploads/2014/10/WeddingCake-on-board.png
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/top-12-time-management-tips-for-cake-decorators?relatedposts_hit=1&relatedposts_origin=29&relatedposts_position=0
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/cake-business-blog
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?document_id=244641&action=signed
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?document_id=244641&action=none
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/ombre-sugar-pom-pom
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/a-complete-guide-to-delivering-cakes-safely?relatedposts_hit=1&relatedposts_origin=485&relatedposts_position=0
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stack-a-multi-tiered-cake-in-7-easy-steps?sa=X&ved=0ahUKEwisqqzzj4nTAhVG9GMKHWmoDC0Q9QEIDjAA
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/null
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/fbakery.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/fsettings.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/mobile2.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-business
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/finsights.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stop-cupcake-cases-from-peeling-away
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stack-a-multi-tiered-cake-in-7-easy-steps.When
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/how-to-prepare-and-conduct-cake-consultation?relatedposts_hit=1&relatedposts_origin=589&relatedposts_position=0
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/fcontacts.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/mobile.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/tiered-cake
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/wp-content/uploads/2015/12/You-know-you-are-a-cake-decorator-when-1.jpg
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/top-reasons-to-turn-down-a-cake-order?relatedposts_hit=1&relatedposts_origin=74&relatedposts_position=1
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/app/
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/category/cakepreneurs
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?document_id=244626&action=none
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/404.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-tasting
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-consultations
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-delivery
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/how-to-prepare-and-conduct-cake-consultation?relatedposts_hit=1&relatedposts_origin=74&relatedposts_position=2
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-sketcher-app
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/wp-content/uploads/2015/10/Wedding-Cake-On-Board-Car-Sign.pdf
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/app
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/nutella
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/recipe
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/category/infographic
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/page/2
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stack-a-multi-tiered-cake-in-7-easy-steps?sa=X&sqi=2&ved=0ahUKEwjm2oibsbXTAhWIjFQKHbPUDj0Q9QEIDjAA
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/how-to-prepare-and-conduct-cake-consultation?relatedposts_hit=1&relatedposts_origin=436&relatedposts_position=1
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stop-cupcake-cases-from-peeling-away?relatedposts_hit=1&relatedposts_origin=184&relatedposts_position=1
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/how-to-protect-your-cake-business-with-comprehensive-terms?relatedposts_hit=1&relatedposts_origin=509&relatedposts_position=0
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-baking
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?document_id=244726&action=none
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?document_id=244630&action=none
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/,http://try.bakingit.com?ref=br_rs
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/cake-business-software.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/top-12-time-management-tips-for-cake-decorators?relatedposts_hit=1&relatedposts_origin=74&relatedposts_position=2
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stack-a-multi-tiered-cake-in-7-easy-steps?relatedposts_hit=1&relatedposts_origin=554&relatedposts_position=2
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/nutella-cake-chocolate-glaze
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/wp-content/uploads/2015/10/2.png
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stack-a-multi-tiered-cake-in-7-easy-steps.
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/top-reasons-to-turn-down-a-cake-order?subscribe=success
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?a=VM0BUb
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/images
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stop-cupcake-cases-peeling-away/?subscribe=success
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/a-complete-guide-to-delivering-cakes-safely?relatedposts_hit=1&relatedposts_origin=566&relatedposts_position=2
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/top-12-time-management-tips-for-cake-decorators?relatedposts_hit=1&relatedposts_origin=525&relatedposts_position=1
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/,http://index1.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/,http://try.bakingit.com
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/how-to-prepare-and-conduct-cake-consultation?relatedposts_hit=1&relatedposts_origin=525&relatedposts_position=0
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/how-to-protect-your-cake-business-with-comprehensive-terms?relatedposts_hit=1&relatedposts_origin=525&relatedposts_position=1
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/ads/Add-a-Cake-Stand.gif
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/search?q=rice+flour+recipes&hl=en&source=android-browser-type&prmd=vin&ei=ElnvWNypOsfk0gS89pjIAw&start=10&sa=N
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/wp-content/uploads/2015/10/Cupcakes-On-Board-Car-Sign.pdf
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?document_id=244634&action=signed
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/wp-content/uploads/2016/07/Info-Cake-Dec-JULY-2016.jpg
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/top-reasons-to-turn-down-a-cake-order?relatedposts_hit=1&relatedposts_origin=509&relatedposts_position=1
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?s=starting+a+business&submit=Search
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?document_id=244628&action=none
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-calculators
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/images/cake-business-software
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/chocolate
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cocktails
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/delivery-signs
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?s=sponge+cake&submit=Search
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/author/bakingit/page/2
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-set-up
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-stacker-app
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-on-board
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stack-a-multi-tiered-cake-in-7-easy-steps?sa=X&sqi=2&ved=0ahUKEwjarKDn7KPTAhUBOo8KHfWnCB8Q9QEIDjAA
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cakestackerapp
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/wp-content/uploads/2014/10/Cake-on-board.png
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/tag/cake-sketcher-app?subscribe=invalid_email
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/pina-colada-cupcakes?relatedposts_hit=1&relatedposts_origin=8&relatedposts_position=0
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/top-12-time-management-tips-for-cake-decorators?relatedposts_hit=1&relatedposts_origin=566&relatedposts_position=2
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/free-cake-on-board-printable-delivery-signs?relatedposts_hit=1&relatedposts_origin=436&relatedposts_position=2
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?document_id=244639&action=signed
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?s=what+is+dowels&submit=Search
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/?document_id=244726&action=signed
+      method: GET
+      assert:
+        http-code: 200
+    - url: bakingit.com/stack-a-multi-tiered-cake-in-7-easy-steps?relatedposts_hit=1&relatedposts_origin=8&relatedposts_position=2
+      method: GET
+      assert:
+        http-code: 200
