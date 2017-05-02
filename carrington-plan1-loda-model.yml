@@ -1,0 +1,12 @@
+---
+metadata:
+  name: carrington-plan1
+  generated:
+    inputs: [google-analytics]
+    host: portal.racsgroup.com
+    date: 2017-05-02T12:47:38.539Z
+    generation-time: 1.475s
+
+requests:
+
+actors:
