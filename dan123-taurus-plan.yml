@@ -1,0 +1,521 @@
+---
+modules:
+  local:
+    sequential: true
+  jmeter:
+    gui: false
+
+execution:
+- concurrency: 500
+  hold-for: 3600s
+  iterations: 10
+  ramp-up: 10s
+  scenario: source-activity-scenario
+
+scenarios:
+  source-activity-scenario:
+    requests:
+    - url: https://www.bakingit.com/fcakes.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/frecipes
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/accCreatedf
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/index1.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cupcakeRecipe
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fillingCoveringRecipe
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/summaryPro
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/expense
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/forders.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fsettings
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/task
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/countrySettings
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/tin
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/home
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/pricingc
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fbakery.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/multiTieredCake
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/contact
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/profilesub
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/settingsPro
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/loginEmail
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/forgotPass
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/accountsub
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/recipesPro
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/bakeryPro
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/orderItem
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/finsights.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/forders
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/businessInsights
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cakes
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/rejectOffer
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cakeCanvas
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/ftasks.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/labourCharges
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fkitchen
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/subscription
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/customField
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/tierCombinations
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/things
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/upgrade
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/login
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/pricing
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/billingInfo
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/stacker
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/servingType
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/ingredient
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/commonHome
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/ribbon
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/order
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cupcake
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cakePopEdit
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/innerHome
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/index2.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/multiTieredCakeAddNew
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cakeRecipe
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/thingsPro
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/convertors
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/volume
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fbakery
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/settings
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fsettings.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fexpenses
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fkitchen.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/equipment
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/terms2
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/emailTemplates
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/orderAdd
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cupcakeEdit
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/otherPrItem
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/units
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/sugarpaste
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cakeStacker
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/loginFb
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/ftasks
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/terms
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fexpenses.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/decoration
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/orderCharges
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/kitchenExpense
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/edibleSupplies
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/biscuit
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/biscuitRecipe
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fcontacts
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/recipes
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/bakery
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/nonEdibleSupplies
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/csubscription
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/macaron
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/macaronAdd
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fcakes
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cupcakeItem
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/biscuitItem
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/biscuitAdd
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/businessincome
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/icingCalculator
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/finsights
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cakePopAdd
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/macaronRecipe
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/flavourPicker
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/otherPr
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/tinConvertor
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/fcontacts.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/shoppingList
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/category
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/orderEdit
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cakeSketcher
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/decorationItem
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/decorationEdit
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/otherPrAdd
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/otherRecipe
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/privacy
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/index2.html?edit=
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/bicalcssuccess
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/decorationAdd
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/summary
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cupcakeAdd
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/resendEmail
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cakePopItem
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cakePop
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/cakeSketcher2
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/frecipes.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/index2.html?name=Butter&categoryIds=&priceFrom=&priceTo=&storage=
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/verify
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/infoMsg
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/multiTieredCak
+      method: GET
+      assert:
+        http-code: 200
+    - url: https://www.bakingit.com/otherPrEdit
+      method: GET
+      assert:
+        http-code: 200
